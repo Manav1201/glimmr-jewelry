@@ -3,8 +3,10 @@ import React from 'react';
 
 import Header from './Header';
 import Footer from './Footer';
-import ProductList from './ProductList';
-import TryOn from './TryOn';
+import PremiumJewelrySection from "./PremiumJewelrySection";
+import ARTryOnCard from './ARTryOnCard';
+
+import TryOn from './ARTryOnCard';
 import HeroIntro from './HeroIntro';
 import AssuranceSection from './AssuranceSection';
 import EarringsCollection from './EarringsCollection';
@@ -17,12 +19,13 @@ const Home = () => {
       <Header />
       <HeroIntro />
       <main className="p-4">
-        <h1 className="text-3xl font-bold mb-4">Welcome to My Jewellery App</h1>
-        <ProductList />
-        <TryOn />
+        {/* <h1 className="text-3xl font-bold mb-4">Welcome to My Jewellery App</h1> */}
+        <PremiumJewelrySection />
+
+        <ARTryOnCard />
 
         <div className="mt-20">
-          <AssuranceSection />
+         
         </div>
 
         <div className="mt-20">
@@ -37,6 +40,7 @@ const Home = () => {
           <EthnicRecommendation />
         </section>
       </main>
+      <AssuranceSection />
       <Footer />
     </div>
   );

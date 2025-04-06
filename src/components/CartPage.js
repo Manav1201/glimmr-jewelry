@@ -26,7 +26,7 @@ const CartPage = () => {
       <motion.h1 
         initial={{ opacity: 0, y: -20 }} 
         animate={{ opacity: 1, y: 0 }} 
-        className="text-4xl font-extrabold mb-10 text-center drop-shadow-sm">
+        className="text-4xl font-extrabold mb-10 mt-10 text-center drop-shadow-sm">
         Your Shopping Cart
       </motion.h1>
 
@@ -63,7 +63,7 @@ const CartPage = () => {
         <motion.div 
           initial={{ opacity: 0, x: 30 }} 
           animate={{ opacity: 1, x: 0 }} 
-          className="bg-white rounded-2xl p-6 shadow-xl sticky top-10 h-fit">
+          className="bg-white rounded-2xl p-6 shadow-xl sticky top-20 h-fit">
           <h2 className="text-2xl font-bold text-[#71171c] mb-4">Order Summary</h2>
           <div className="space-y-2 text-sm text-gray-600">
             <div className="flex justify-between">
